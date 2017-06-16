@@ -16,7 +16,15 @@ html {
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
 }
-
+// span 标签黑块问题
+span:active{  
+  box-shadow: inset 0 5px 10px #B41313,inset 0 -5px 10px #B41313;  
+}
+// ios不能添加click事件，消除点击高亮
+a{
+  cursor:pointer;
+  -webkit-tap-highlight-color: transparent;  
+}
 /* Sections
    ========================================================================== */
 
